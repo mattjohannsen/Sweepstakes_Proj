@@ -20,10 +20,10 @@ namespace Sweepstakes
         {
 
         }
-        public Contestant PickWinner()
-        {
+        //public Contestant PickWinner()
+        //{
 
-        }
+        //}
         public void PrintContestantInfo()
         {
 
