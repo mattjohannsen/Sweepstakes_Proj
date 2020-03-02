@@ -8,7 +8,7 @@ namespace Sweepstakes
 {
     static class UserInterface
     {
-        static string GetUserInputFor(string prompt)
+        public static string GetUserInputFor(string prompt)
         {
             string userInput = "";
             return userInput;

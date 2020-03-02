@@ -8,13 +8,13 @@ namespace Sweepstakes
 {
     class SweepstakeStackManager
     {
-        Stack<Sweepstakes> stack;
+        private Stack<Sweepstakes> stack;
 
-        private void InsertSweepStakes(Sweepstakes sweepstakes)
+        public void InsertSweepStakes(Sweepstakes sweepstakes)
         {
 
         }
-        //private Sweepstakes GetSweepstakes()
+        //public Sweepstakes GetSweepstakes()
         //{
         //    return Sweepstakes;
         //}
