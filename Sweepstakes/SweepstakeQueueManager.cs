@@ -10,7 +10,7 @@ namespace Sweepstakes
     {
         private Queue<Sweepstakes> queue;
 
-        public void InsertSweepStakes(Sweepstakes sweepstakes)
+        public void InsertSweepstakes(Sweepstakes sweepstakes)
         {
             queue.Enqueue(sweepstakes);
         }

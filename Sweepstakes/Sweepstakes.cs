@@ -12,27 +12,30 @@ namespace Sweepstakes
         private string name;
         public string Name
         {
-            get
-            {
-                return name;
-            }
+            get { return name; }
+            set { name = value; }
         }
-
         public Sweepstakes(string name)
         {
-
+            this.name = name;
         }
         public void RegisterContestant(Contestant contestant)
         {
-
+            Console.WriteLine($"       OFFICIAL REGISTRATION");
+            Console.WriteLine($"       What is your first name?");
+            //contestant.FirstName = Console.Readline();
         }
         //public Contestant PickWinner()
         //{
 
         //}
-        public void PrintContestantInfo()
+        public void PrintContestantInfo(Contestant contestant)
         {
-
+            Console.WriteLine($"       This is the Contestant's info:");
+            Console.WriteLine($"           First Name: {contestant.FirstName}");
+            Console.WriteLine($"            Last Name: {contestant.LastName}");
+            Console.WriteLine($"        Email Address: {contestant.EmailAddress}");
+            Console.WriteLine($"       Registration #: {contestant.RegistrationNumber}");
         }
     }
 }

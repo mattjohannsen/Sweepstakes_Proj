@@ -8,7 +8,7 @@ namespace Sweepstakes
 {
     class MarketingFirm
     {
-        private ISweepstakesManager _manager;
+        private ISweepStakesManager _manager;
 
         public MarketingFirm()
         {
@@ -16,6 +16,9 @@ namespace Sweepstakes
         }
         public void CreateSweepstake()
         {
+            Console.WriteLine("       What do you want to call you new Sweepstakes?");
+            string sweepstakesName = Console.ReadLine();
+            Sweepstakes sweepstakes = new Sweepstakes(sweepstakesName);
 
         }
     }

@@ -10,7 +10,7 @@ namespace Sweepstakes
     {
         private Stack<Sweepstakes> stack;
 
-        public void InsertSweepStakes(Sweepstakes sweepstakes)
+        public void InsertSweepstakes(Sweepstakes sweepstakes)
         {
             stack.Push(sweepstakes);
         }
