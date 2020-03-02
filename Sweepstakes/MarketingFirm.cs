@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace Sweepstakes
 {
-    class MarketingFirm : ISweepstakesManager
+    class MarketingFirm
     {
         private ISweepstakesManager _manager;
 
-        public MarketingFirm(ISweepstakesManager manager)
+        public MarketingFirm()
         {
 
         }

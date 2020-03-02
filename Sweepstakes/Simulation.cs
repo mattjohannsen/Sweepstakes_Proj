@@ -10,7 +10,9 @@ namespace Sweepstakes
     {
         public void RunSimulation()
         {
-            Console.WriteLine("       We are now in the simulation!");
+            //Console.WriteLine("       We are now in the simulation!");
+            MarketingFirm theFirm = new MarketingFirm();
+
         }
         public void CreateMarketingFirmWithManager()
         {
