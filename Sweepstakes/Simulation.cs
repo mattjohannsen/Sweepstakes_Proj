@@ -8,6 +8,10 @@ namespace Sweepstakes
 {
     class Simulation
     {
+        public void RunSimulation()
+        {
+            Console.WriteLine("       We are now in the simulation!");
+        }
         public void CreateMarketingFirmWithManager()
         {
 
