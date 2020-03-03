@@ -18,5 +18,10 @@ namespace Sweepstakes
         {
             return stack.Pop();
         }
+        public int GetSweepstakesCount()
+        {
+            int intvariable = 1;
+            return intvariable;
+        }
     }
 }
