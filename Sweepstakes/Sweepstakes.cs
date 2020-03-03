@@ -23,6 +23,10 @@ namespace Sweepstakes
         {
             Console.WriteLine($"       OFFICIAL REGISTRATION");
             Console.WriteLine($"       What is your first name?");
+            contestant.FirstName = UserInterface.GetUserInputFor("First Name");
+            contestant.LastName = UserInterface.GetUserInputFor("Last Name");
+            contestant.EmailAddress = UserInterface.GetUserInputFor("Email Address");
+            contestant.RegistrationNumber = contestants.Count;
 
             //contestant.FirstName = Console.Readline();
         }

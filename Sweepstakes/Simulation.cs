@@ -14,8 +14,9 @@ namespace Sweepstakes
         {
             Console.WriteLine("       Sweepstakes Manager 1.0");
             CreateMarketingFirmWithManager();
+            theFirm.CreateSweepstake();
             
-            //theFirm.CreateSweepstake();
+
 
 
 
@@ -44,6 +45,7 @@ namespace Sweepstakes
                     break;
             }
             MarketingFirm theFirm = new MarketingFirm(manager);
+            theFirm.CreateSweepstake();
         }
     }
 }
