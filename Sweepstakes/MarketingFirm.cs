@@ -17,16 +17,7 @@ namespace Sweepstakes
         public MarketingFirm(ISweepStakesManager manager)
         {
             _manager = manager;
-            //if (firmType == "stack")
-            //{
-            //    SweepstakeStackManager sweepstakesStackManager = new SweepstakeStackManager();
-            //    _manager = sweepstakesStackManager;
-            //}
-            //if (firmType == "queue")
-            //{
-            //    SweepstakeQueueManager sweepstakeQueueManager = new SweepstakeQueueManager();
-            //    _manager = sweepstakeQueueManager;
-            //}
+
         }
         public void CreateSweepstake()
         {
@@ -34,7 +25,6 @@ namespace Sweepstakes
             string sweepstakesName = Console.ReadLine();
             Sweepstakes sweepstakes = new Sweepstakes(sweepstakesName);
             _manager.InsertSweepstakes(sweepstakes);
-            //InsertSweepstakes(sweepstakes);
 
         }
     }

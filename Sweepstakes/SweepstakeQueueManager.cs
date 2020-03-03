@@ -18,10 +18,6 @@ namespace Sweepstakes
         {
             return queue.Dequeue();
         }
-        public int GetSweepstakesCount()
-        {
-            int queueCount = queue.Count;
-            return queueCount;
-        }
+
     }
 }

@@ -28,21 +28,9 @@ namespace Sweepstakes
             contestant.EmailAddress = UserInterface.GetUserInputFor("Email Address");
             contestant.RegistrationNumber = contestants.Count;
             contestants.Add(contestant.RegistrationNumber, contestant);
-            //add contestant to Dictionary
-            //contestant.FirstName = Console.Readline();
         }
         public Contestant PickWinner()
         {
-            //MarketingFirm theFirm = new MarketingFirm();
-            //int numberOfSweepStakes = theFirm._manager.GetSweepstakesCount();
-            //foreach (sweepstake in sweepstakes)
-            //Sweepstakes sweepstakes = new Sweepstakes("test");
-            //Contestant contestant = null;
-            //theFirm._manager.GetSweepstakes(sweepstakes);
-            // Go to appropriate Sweepstake Manager and find our appropriate Sweepstake
-
-            //Once we get the correct Sweepstakes, the get the count
-            //int sweepstakesCount = theFirm._manager.sweepstakesGetSweepstakesCount();
             Contestant winner = null;
             int sweepstakesCount = contestants.Count;
             int result;
@@ -52,23 +40,11 @@ namespace Sweepstakes
             foreach (KeyValuePair<int, Contestant> contestant in contestants)
             {
                 if (contestant.Key == key)
+                {
                     winner = contestant.Value;
-                    Console.WriteLine("Month " + contestant.Key + " is of season " + contestant.Value);
+                }
             }
             return winner;
-
-            //Generate a random number between 1 and the Count
-            //This is the key to the customer that we want to notify that they won.
-
-
-            //string key = (Console.ReadLine());
-
-            //foreach (KeyValuePair<string, string> month in monthsInSeason)
-            //{
-            //    if (month.Key == key)
-            //        Console.WriteLine("Month " + month.Key + " is of season " + month.Value);
-            //}
-
         }
         public void PrintContestantInfo(Contestant contestant)
         {
