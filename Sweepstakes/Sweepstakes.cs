@@ -32,6 +32,7 @@ namespace Sweepstakes
         public Contestant PickWinner()
         {
             Contestant winner = null;
+            Contestant loser = null;
             int sweepstakesCount = contestants.Count;
             int result;
             Random rnd = new Random();
@@ -39,9 +40,16 @@ namespace Sweepstakes
             int key = result;
             foreach (KeyValuePair<int, Contestant> contestant in contestants)
             {
-                if (contestant.Key == key)
+                if (contestant.Key != key)
+                {
+                    loser = contestant.Value;
+                    loser.Notify(loser);
+                }
+                else
                 {
                     winner = contestant.Value;
+                    bool isWinner = true;
+                    winner.Notify(winner, isWinner);
                 }
             }
             return winner;
