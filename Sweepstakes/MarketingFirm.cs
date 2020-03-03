@@ -14,22 +14,23 @@ namespace Sweepstakes
         {
 
         }
-        public MarketingFirm(string firmType)
+        public MarketingFirm(ISweepStakesManager manager)
         {
-            if (firmType == "stack")
-            {
-                SweepstakeStackManager sweepstakesStackManager = new SweepstakeStackManager();
-                _manager = sweepstakesStackManager;
-            }
-            if (firmType == "queue")
-            {
-                SweepstakeQueueManager sweepstakeQueueManager = new SweepstakeQueueManager();
-                _manager = sweepstakeQueueManager;
-            }
+            _manager = manager;
+            //if (firmType == "stack")
+            //{
+            //    SweepstakeStackManager sweepstakesStackManager = new SweepstakeStackManager();
+            //    _manager = sweepstakesStackManager;
+            //}
+            //if (firmType == "queue")
+            //{
+            //    SweepstakeQueueManager sweepstakeQueueManager = new SweepstakeQueueManager();
+            //    _manager = sweepstakeQueueManager;
+            //}
         }
         public void CreateSweepstake()
         {
-            Console.WriteLine("       What do you want to call you new Sweepstakes?");
+            Console.WriteLine("       What do you want to call your new Sweepstakes?");
             string sweepstakesName = Console.ReadLine();
             Sweepstakes sweepstakes = new Sweepstakes(sweepstakesName);
 
