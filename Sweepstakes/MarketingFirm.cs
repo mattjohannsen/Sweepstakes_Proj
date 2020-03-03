@@ -33,6 +33,8 @@ namespace Sweepstakes
             Console.WriteLine("       What do you want to call your new Sweepstakes?");
             string sweepstakesName = Console.ReadLine();
             Sweepstakes sweepstakes = new Sweepstakes(sweepstakesName);
+            _manager.InsertSweepstakes(sweepstakes);
+            //InsertSweepstakes(sweepstakes);
 
         }
     }
