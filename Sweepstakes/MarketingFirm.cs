@@ -14,6 +14,19 @@ namespace Sweepstakes
         {
 
         }
+        public MarketingFirm(string firmType)
+        {
+            if (firmType == "stack")
+            {
+                SweepstakeStackManager sweepstakesStackManager = new SweepstakeStackManager();
+                _manager = sweepstakesStackManager;
+            }
+            if (firmType == "queue")
+            {
+                SweepstakeQueueManager sweepstakeQueueManager = new SweepstakeQueueManager();
+                _manager = sweepstakeQueueManager;
+            }
+        }
         public void CreateSweepstake()
         {
             Console.WriteLine("       What do you want to call you new Sweepstakes?");

@@ -8,15 +8,36 @@ namespace Sweepstakes
 {
     class Simulation
     {
+        MarketingFirm theFirm;
         public void RunSimulation()
         {
-            //Console.WriteLine("       We are now in the simulation!");
-            MarketingFirm theFirm = new MarketingFirm();
+            Console.WriteLine("       Sweepstakes Manager 1.0");
+            CreateMarketingFirmWithManager();
+            
 
         }
         public void CreateMarketingFirmWithManager()
         {
-
+            Console.WriteLine();
+            Console.WriteLine("       Select your Sweepstakes Manager type:");
+            Console.WriteLine("       Type 'stack' for Stack Manager (LIFO)");
+            Console.WriteLine("       Type 'queue' for Queue Manager (FIFO)");
+            string managerChoice;
+            managerChoice = Console.ReadLine();
+            switch (managerChoice)
+            {
+                case "stack":
+                    //MarketingFirm theFirm = new MarketingFirm(managerChoice);
+                    break;
+                case "queue":
+                    //MarketingFirm theFirm = new MarketingFirm(managerChoice);
+                    break;
+                default:
+                    Console.WriteLine("       That is not a valid choice. Select stack or queue.");
+                    CreateMarketingFirmWithManager();
+                    break;
+            }
+            MarketingFirm theFirm = new MarketingFirm(managerChoice);
         }
     }
 }

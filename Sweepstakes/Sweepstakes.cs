@@ -23,6 +23,7 @@ namespace Sweepstakes
         {
             Console.WriteLine($"       OFFICIAL REGISTRATION");
             Console.WriteLine($"       What is your first name?");
+
             //contestant.FirstName = Console.Readline();
         }
         //public Contestant PickWinner()
