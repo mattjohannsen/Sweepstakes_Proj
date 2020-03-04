@@ -13,8 +13,6 @@ namespace Sweepstakes
         public void RunSimulation()
         {
             Console.WriteLine("       Sweepstakes Manager 1.0");
-            CreateMarketingFirmWithManager();
-            //theFirm.CreateSweepstake();
         }
         public void CreateMarketingFirmWithManager()
         {
